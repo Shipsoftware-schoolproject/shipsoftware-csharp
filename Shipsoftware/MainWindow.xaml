@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Shipsoftware"
         mc:Ignorable="d"
-        Title="MainWindow" Height="426.627" Width="870.858">
+        Title="MainWindow" Height="482.544" Width="870.858">
     <Grid>
         <ListBox x:Name="lstLaivat" HorizontalAlignment="Left" Height="221" Margin="32,64,0,0" VerticalAlignment="Top" Width="146"/>
         <Label x:Name="lblLaivat" Content="Laivat" HorizontalAlignment="Left" Height="26" Margin="32,33,0,0" VerticalAlignment="Top" Width="69"/>
+        <WebBrowser HorizontalAlignment="Left" Height="354" Margin="361,0,0,0" VerticalAlignment="Top" Width="502" Source="https://www.google.fi/maps?source=tldso"/>
 
     </Grid>
 </Window>
