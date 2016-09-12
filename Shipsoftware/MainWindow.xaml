@@ -14,7 +14,7 @@
         <ListBox x:Name="lstLaivat" HorizontalAlignment="Left" Height="240" Margin="10,44,0,0" VerticalAlignment="Top" Width="166"/>
         <Label x:Name="lblLaivat" Content="Laivat" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="78"/>
         <WebBrowser Name="Browser" HorizontalAlignment="Left" Height="385" Margin="528,10,0,0" VerticalAlignment="Top" Width="441" Source="https://www.google.fi/maps?source=tldso"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="307" Margin="206,10,0,0" VerticalAlignment="Top" Width="401" Source="Kompassi.jpg"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="307" Margin="206,10,0,0" VerticalAlignment="Top" Width="317" Source="Kompassi.jpg" RenderTransformOrigin="0.383,0.507"/>
 
     </Grid>
 </Window>
