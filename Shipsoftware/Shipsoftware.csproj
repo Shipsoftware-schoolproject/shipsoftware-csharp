@@ -96,7 +96,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Kompassi.jpg" />
+    <Resource Include="Resources\Kompassi.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Kompassi.jpg" />
