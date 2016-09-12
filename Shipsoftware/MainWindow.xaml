@@ -11,10 +11,19 @@
             <RowDefinition Height="403*"/>
             <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
-        <ListBox x:Name="lstLaivat" HorizontalAlignment="Left" Height="240" Margin="10,44,0,0" VerticalAlignment="Top" Width="166"/>
-        <Label x:Name="lblLaivat" Content="Laivat" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="78"/>
-        <WebBrowser Name="Browser" HorizontalAlignment="Left" Height="385" Margin="528,10,0,0" VerticalAlignment="Top" Width="441" Source="https://www.google.fi/maps?source=tldso"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="274" Margin="222,10,0,0" VerticalAlignment="Top" Width="277" Source="Resources/Kompassiuusi.jpg"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="278" VerticalAlignment="Top" Width="211"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="278" Margin="211,0,0,0" VerticalAlignment="Top" Width="262"/>
+
+        <ListBox x:Name="lstLaivat" HorizontalAlignment="Left" Height="100" Margin="10,44,0,0" VerticalAlignment="Top" Width="166"/>
+        <Label x:Name="lblLaivat" Content="Laivat" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="49"/>
+        <WebBrowser x:Name="Browser" HorizontalAlignment="Left" Height="378" Margin="490,21,0,0" VerticalAlignment="Top" Width="497" Source="https://www.google.fi/maps?source=tldso"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="240" Margin="221,10,0,0" VerticalAlignment="Top" Width="235" Source="Resources/Kompassiuusi.jpg"/>
+        <TextBox x:Name="txtEtsiLaiva" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="Etsi Laiva" VerticalAlignment="Top" Width="99" Margin="64,12,0,0"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="23" Margin="211,255,0,0" VerticalAlignment="Top" Width="142"/>
+        <Label x:Name="tarkkaSuunta" Content="TarkkaSuunta:" HorizontalAlignment="Left" Margin="221,252,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label x:Name="lblKompassiAste" Content="" HorizontalAlignment="Left" Margin="327,252,0,0" VerticalAlignment="Top" Width="26"/>
 
     </Grid>
 </Window>
