@@ -5,11 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Shipsoftware"
         mc:Ignorable="d"
-        Title="MainWindow" Height="482.544" Width="870.858">
+        Title="MainWindow" Height="600.477" Width="1005.499">
     <Grid>
-        <ListBox x:Name="lstLaivat" HorizontalAlignment="Left" Height="221" Margin="32,64,0,0" VerticalAlignment="Top" Width="146"/>
-        <Label x:Name="lblLaivat" Content="Laivat" HorizontalAlignment="Left" Height="26" Margin="32,33,0,0" VerticalAlignment="Top" Width="69"/>
-        <WebBrowser HorizontalAlignment="Left" Height="354" Margin="361,0,0,0" VerticalAlignment="Top" Width="502" Source="https://www.google.fi/maps?source=tldso"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="403*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="lstLaivat" HorizontalAlignment="Left" Height="240" Margin="10,44,0,0" VerticalAlignment="Top" Width="166"/>
+        <Label x:Name="lblLaivat" Content="Laivat" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="78"/>
+        <WebBrowser Name="Browser" HorizontalAlignment="Left" Height="385" Margin="528,10,0,0" VerticalAlignment="Top" Width="441" Source="https://www.google.fi/maps?source=tldso"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="307" Margin="206,10,0,0" VerticalAlignment="Top" Width="401" Source="U:\Projekti Laivasoftware\Shipsoftware\Shipsoftware\Shipsoftware\Resources\Kompassi.jpg"/>
 
     </Grid>
 </Window>
