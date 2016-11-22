@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Shipsoftware"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600.477" Width="1005.499" Icon="favicon.ico">
+        Title="MainWindow" Height="600.477" Width="1005.499" Icon="favicon.ico" Loaded="Window_Loaded">
     <Window.Resources>
-        <BitmapImage x:Key="Kompassi" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="U:\Projekti Laivasoftware\Shipsoftware\Shipsoftware\Shipsoftware\Resources\Kompassi.jpg"/>
+        <BitmapImage x:Key="Kompassi" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Resources\Kompassi.jpg"/>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
