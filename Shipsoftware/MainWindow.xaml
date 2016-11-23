@@ -19,15 +19,17 @@
 
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="278" Margin="211,0,0,0" VerticalAlignment="Top" Width="262"/>
 
-        <ListBox x:Name="lstLaivat" HorizontalAlignment="Left" Height="100" Margin="10,44,0,0" VerticalAlignment="Top" Width="166"/>
-        <Label x:Name="Laivat" Content="Laivat" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="49"/>
+        <ListBox x:Name="lstLaivat" HorizontalAlignment="Left" Height="100" Margin="10,44,0,0" VerticalAlignment="Top" Width="186"/>
+        <Label x:Name="Laivat" Content="Laivat" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="39"/>
         <WebBrowser x:Name="Browser" HorizontalAlignment="Left" Height="266" Margin="478,12,0,0" VerticalAlignment="Top" Width="509" Source="https://www.google.fi/maps?source=tldso"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="240" Margin="221,10,0,0" VerticalAlignment="Top" Width="235" Source="{DynamicResource Kompassi}"/>
-        <TextBox x:Name="txtEtsiLaiva" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="Etsi Laiva" VerticalAlignment="Top" Width="99" Margin="64,12,0,0"/>
+        <TextBox x:Name="txtEtsiLaiva" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="Etsi Laiva" VerticalAlignment="Top" Width="99" Margin="54,12,0,0"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="23" Margin="211,255,0,0" VerticalAlignment="Top" Width="142"/>
         <Label x:Name="tarkkaSuunta" Content="TarkkaSuunta:" HorizontalAlignment="Left" Margin="221,252,0,0" VerticalAlignment="Top" Width="92"/>
-        <Label x:Name="lblKompassiAste" Content="" HorizontalAlignment="Left" Margin="327,252,0,0" VerticalAlignment="Top" Width="26"/>
-        <Label x:Name="LaivaID" Content="Laiva ID" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Height="28" Width="49"/>
+        <Label x:Name="lblKompassiAste" Content="" HorizontalAlignment="Left" Margin="302,252,0,0" VerticalAlignment="Top" Width="51"/>
+        <Label x:Name="LaivaID" Content="Laiva ID" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Height="28" Width="65"/>
+        <Label x:Name="lblLaivaID" Content="" HorizontalAlignment="Left" Margin="80,149,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Etsi" HorizontalAlignment="Left" Margin="158,10,0,0" VerticalAlignment="Top" Width="38" Height="29" Click="button_Click"/>
 
     </Grid>
 </Window>

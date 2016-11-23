@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is NOT compatible with Silverlight-->
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+  <Canvas Name="svg4413" Width="708.66142" Height="708.66141">
+    <Canvas.RenderTransform>
+      <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <Canvas.Resources/>
+    <!--Unknown tag: sodipodi:namedview-->
+    <!--Unknown tag: metadata-->
+    <Canvas Name="layer1">
+      <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="-343.70079"/>
+      </Canvas.RenderTransform>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="35.0657196" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="543.65405" Canvas.Top="488.0019704" Name="text3404">
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196">45°</Span>
+      </TextBlock>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="35.0657196" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="546.60034" Canvas.Top="831.2377504" Name="text3408">
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196">135°</Span>
+      </TextBlock>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="35.0657196" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="157.6765" Canvas.Top="868.4449604" Name="text3416">
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196">225°</Span>
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196"/>
+      </TextBlock>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="35.0657196" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="153.66699" Canvas.Top="469.4390404" Name="text3422">
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196">315°</Span>
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196"/>
+      </TextBlock>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="35.0657196" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="97.390663" Canvas.Top="441.1100604" Name="text3428">
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196">NW</Span>
+      </TextBlock>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="35.0657196" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="100.78324" Canvas.Top="915.3777004" Name="text3432">
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196">SW</Span>
+      </TextBlock>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="35.0657196" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="620.02496" Canvas.Top="864.0888804" Name="text3436">
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196">SE</Span>
+      </TextBlock>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="35.0657196" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="613.87579" Canvas.Top="454.0405404" Name="text3376">
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196">NE</Span>
+      </TextBlock>
+      <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="152.2106" Canvas.Top="462.13037" Width="447.61887" Height="449.11594" RadiusY="227.90536" RadiusX="227.90536" Name="rect3526" StrokeThickness="6.13791752" Stroke="#FF000000" StrokeMiterLimit="4"/>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="0.85811025" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FFFFFFFF" Canvas.Left="-127.12019" Canvas.Top="715.66275975" Name="text4332">
+        <Span whiteSpaceCollapse="preserve" FontSize="0.85811025">Jorin kompassi ©</Span>
+      </TextBlock>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="35.0657196" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="616.9364" Canvas.Top="667.3943604" Name="text4336">
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196">90°</Span>
+      </TextBlock>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="35.0657196" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="374.5224" Canvas.Top="412.8068404" Name="text4340">
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196">0°</Span>
+      </TextBlock>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="35.0657196" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="335.8461" Canvas.Top="916.2050304" Name="text4344">
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196">180°</Span>
+      </TextBlock>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="39.44893646" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="373.46387" Canvas.Top="378.22361354" Name="text4348">
+        <Span whiteSpaceCollapse="preserve" FontSize="39.44893646">N</Span>
+      </TextBlock>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="35.0657196" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="682.12555" Canvas.Top="668.8369904" Name="text4352">
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196">E</Span>
+      </TextBlock>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="35.0657196" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="56.137779" Canvas.Top="655.3412604" Name="text4356">
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196">270°</Span>
+      </TextBlock>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="18.71316338" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="12.792469" Canvas.Top="672.86740662" Name="text4360">
+        <Span whiteSpaceCollapse="preserve" FontSize="35.0657196">W</Span>
+      </TextBlock>
+      <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="21.34638977" FontWeight="Normal" FontFamily="sans-serif" FontStyle="normal" Foreground="#FF000000" Canvas.Left="363.54532" Canvas.Top="978.23680023" Name="text4364">
+        <Span whiteSpaceCollapse="preserve" FontSize="40">S</Span>
+      </TextBlock>
+    </Canvas>
+  </Canvas>
+</Viewbox>
