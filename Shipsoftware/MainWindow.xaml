@@ -5,31 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Shipsoftware"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600.477" Width="1005.499" Icon="favicon.ico" Loaded="Window_Loaded">
+        Title="MainWindow" Height="525.477" Width="1005.499" Icon="favicon.ico" Loaded="Window_Loaded">
     <Window.Resources>
         <BitmapImage x:Key="Kompassi" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Resources\Kompassi.jpg"/>
     </Window.Resources>
-    <Grid>
+    <Grid Height="568" VerticalAlignment="Top">
         <Grid.RowDefinitions>
-            <RowDefinition Height="403*"/>
-            <RowDefinition Height="50*"/>
+            <RowDefinition Height="535*"/>
+            <RowDefinition Height="33*"/>
         </Grid.RowDefinitions>
 
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="278" VerticalAlignment="Top" Width="211"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="278" VerticalAlignment="Top" Width="211" BorderBrush="Black">
+            <Label x:Name="Laivatyyppi" Content="Tyyppi:" HorizontalAlignment="Left" Height="28" Margin="9,170,0,0" VerticalAlignment="Top" Width="48"/>
+        </Border>
 
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="278" Margin="211,0,0,0" VerticalAlignment="Top" Width="262"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="278" Margin="211,0,0,0" VerticalAlignment="Top" Width="266"/>
 
         <ListBox x:Name="lstLaivat" HorizontalAlignment="Left" Height="100" Margin="10,44,0,0" VerticalAlignment="Top" Width="186"/>
-        <Label x:Name="Laivat" Content="Laivat" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="39"/>
-        <WebBrowser x:Name="Browser" HorizontalAlignment="Left" Height="266" Margin="478,12,0,0" VerticalAlignment="Top" Width="509" Source="https://www.google.fi/maps?source=tldso"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="240" Margin="221,10,0,0" VerticalAlignment="Top" Width="235" Source="{DynamicResource Kompassi}"/>
-        <TextBox x:Name="txtEtsiLaiva" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="Etsi Laiva" VerticalAlignment="Top" Width="99" Margin="54,12,0,0"/>
+        <Label x:Name="Laivat" Content="Laivat" HorizontalAlignment="Left" Height="28" Margin="15,7,0,0" VerticalAlignment="Top" Width="54" FontWeight="Bold"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="240" Margin="221,10,0,0" VerticalAlignment="Top" Width="234" Source="{DynamicResource Kompassi}"/>
+        <TextBox x:Name="txtEtsiLaiva" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="Etsi Laiva" VerticalAlignment="Top" Width="94" Margin="74,9,0,0"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="23" Margin="211,255,0,0" VerticalAlignment="Top" Width="142"/>
-        <Label x:Name="tarkkaSuunta" Content="TarkkaSuunta:" HorizontalAlignment="Left" Margin="221,252,0,0" VerticalAlignment="Top" Width="92"/>
-        <Label x:Name="lblKompassiAste" Content="" HorizontalAlignment="Left" Margin="302,252,0,0" VerticalAlignment="Top" Width="51"/>
-        <Label x:Name="LaivaID" Content="Laiva ID" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Height="28" Width="65"/>
-        <Label x:Name="lblLaivaID" Content="" HorizontalAlignment="Left" Margin="80,149,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="button" Content="Etsi" HorizontalAlignment="Left" Margin="158,10,0,0" VerticalAlignment="Top" Width="38" Height="29" Click="button_Click"/>
+        <Label x:Name="tarkkaSuunta" Content="TarkkaSuunta:" HorizontalAlignment="Left" Margin="221,252,0,0" VerticalAlignment="Top" Width="92" Height="26"/>
+        <Label x:Name="lblKompassiAste" Content="" HorizontalAlignment="Left" Margin="302,252,0,0" VerticalAlignment="Top" Width="51" Height="26"/>
+        <Label x:Name="lblLaivaID" Content="" HorizontalAlignment="Left" Margin="65,149,0,0" VerticalAlignment="Top" Height="26" Width="44"/>
+        <Button x:Name="button" Content="Etsi" HorizontalAlignment="Left" Margin="168,9,0,0" VerticalAlignment="Top" Width="38" Height="29" Click="button_Click"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="210" Margin="0,278,0,0" VerticalAlignment="Top" Width="478">
+            <Label x:Name="label" Margin="-1,1,1,-1"/>
+        </Border>
+        <Label x:Name="lblLaivanTyyppi" Content="Placeholder" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="56,171,0,0" Height="25" Width="140"/>
+        <Label x:Name="LaivaID" Content="Laiva ID:" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Height="28" Width="55"/>
+        <Label x:Name="North" Content="N:" HorizontalAlignment="Left" Height="28" Margin="491,26,0,0" VerticalAlignment="Top" Width="32"/>
+        <Label x:Name="GPS" Content="GPS" HorizontalAlignment="Left" Margin="478,0,0,509" VerticalAlignment="Bottom" FontWeight="Bold"/>
+        <Label x:Name="East" Content="E:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="492,44,0,0"/>
 
     </Grid>
 </Window>

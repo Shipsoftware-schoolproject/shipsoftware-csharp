@@ -76,11 +76,11 @@ namespace Shipsoftware
             cnn.Open();
 
             lblLaivaID.Content = ((ListBoxItem)lstLaivat.SelectedItem).Tag;
-            SqlCommand cmd = new SqlCommand("select Course from Ships WHERE ShipID=" + ((ListBoxItem)lstLaivat.SelectedItem).Tag, cnn);
+            SqlCommand cmd = new SqlCommand("select Course, ShipTypes.Name from Ships Inner Join ShipTypes on ships.ShipTypeID = ShipTypes.ShipTypeID  WHERE ShipID = " + ((ListBoxItem)lstLaivat.SelectedItem).Tag, cnn);
             Reader = cmd.ExecuteReader();
             Reader.Read();
             lblKompassiAste.Content = Reader["Course"];
-
+            lblLaivanTyyppi.Content = Reader["Name"];
 
 
             cnn.Close();
