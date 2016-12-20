@@ -67,8 +67,7 @@ namespace Shipsoftware
             cnn.Open();
 
             lblLaivaID.Content = ((ListBoxItem)lstLaivat.SelectedItem).Tag;
-            // TODO: @jori Get ship location
-            SqlCommand cmd = new SqlCommand("select Course, ShipTypes.Name from Ships Inner Join ShipTypes on ships.ShipTypeID = ShipTypes.ShipTypeID  WHERE ShipID = " + ((ListBoxItem)lstLaivat.SelectedItem).Tag, cnn);
+            SqlCommand cmd = new SqlCommand("select Course, ShipTypes.Name, North,East from Ships inner join GPS on Ships.ShipID = GPS.ShipID Inner Join ShipTypes on ships.ShipTypeID = ShipTypes.ShipTypeID  WHERE Ships.ShipID = " + ((ListBoxItem)lstLaivat.SelectedItem).Tag, cnn);
             Reader = cmd.ExecuteReader();
             Reader.Read();
             lblKompassiAste.Content = Reader["Course"];
