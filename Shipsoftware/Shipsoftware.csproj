@@ -39,7 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Maps.MapControl.WPF">
-      <HintPath>..\..\..\..\BingMapsControl\V1\Libraries\Microsoft.Maps.MapControl.WPF.dll</HintPath>
+      <HintPath>BingMapsControl\V1\Libraries\Microsoft.Maps.MapControl.WPF.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
