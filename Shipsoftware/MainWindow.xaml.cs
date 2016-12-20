@@ -1,18 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Shipsoftware
 {
@@ -23,51 +12,54 @@ namespace Shipsoftware
     {
         string connetionString = null;
         SqlConnection cnn;
+        SqlDataReader Reader;
 
         public MainWindow()
         {
             InitializeComponent();
-            string[] lines = System.IO.File.ReadAllLines(@"yhdistys.txt");
-            connetionString = "Data Source=" + lines[0] + ";  Initial Catalog=" + lines[1] + ";User ID=" + lines[2] + ";Password=" + lines[3]; // yhteyden tiedot
-            cnn = new SqlConnection(connetionString);
-            try   // yhteyden avaus yritys
+            
+            try
             {
-                cnn.Open();
-                MessageBox.Show("Connection Open ! ");
-            }
-            catch
-            {
-                MessageBox.Show("Can not open connection ! "); // yhteys virhe viesti
-            }
-        }
-       
-            SqlDataReader Reader;
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-           
-                
-                SqlCommand cmd = new SqlCommand("select ShipName, ShipID from Ships", cnn);
-                try
+                string[] lines = System.IO.File.ReadAllLines(@"yhdistys.txt");
+                connetionString = "Data Source=" + lines[0] + ";  Initial Catalog=" + lines[1] + ";User ID=" + lines[2] + ";Password=" + lines[3]; // yhteyden tiedot
+                cnn = new SqlConnection(connetionString);
+                try   // yhteyden avaus yritys
                 {
-                    Reader = cmd.ExecuteReader();
+                    cnn.Open();
                 }
                 catch
                 {
-                    MessageBox.Show("ei toimi");
-                    return;
+                    MessageBox.Show("Can not open connection ! "); // yhteys virhe viesti
                 }
-                while (Reader.Read())
-                {
-                    //  lstLaivat.Items.Add(Reader["ShipName"]);
+            }
+            catch
+            {
+                MessageBox.Show("Could not load configuration");
+            }
+        }
 
-                    ListBoxItem Item = new ListBoxItem();
-                    Item.Content = Reader["ShipName"];
-                    Item.Tag = Reader["ShipID"];
-                    lstLaivat.Items.Add(Item);
-                    Item.MouseLeftButtonUp += ListBoxItem_MouseLeftButtonUp;
-
-                
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            // TODO: @jori Get Ship location
+            SqlCommand cmd = new SqlCommand("select ShipName, ShipID from Ships", cnn);
+            try
+            {
+                Reader = cmd.ExecuteReader();
+            }
+            catch
+            {
+                MessageBox.Show("ei toimi");
+                return;
+            }
+            while (Reader.Read())
+            {
+                //  lstLaivat.Items.Add(Reader["ShipName"]);
+                ListBoxItem Item = new ListBoxItem();
+                Item.Content = Reader["ShipName"];
+                Item.Tag = Reader["ShipID"];
+                lstLaivat.Items.Add(Item);
+                Item.MouseLeftButtonUp += ListBoxItem_MouseLeftButtonUp;
+				// TODO: Add pushpins to map
             }
             cnn.Close();
         }
@@ -76,12 +68,13 @@ namespace Shipsoftware
             cnn.Open();
 
             lblLaivaID.Content = ((ListBoxItem)lstLaivat.SelectedItem).Tag;
+            // TODO: @jori Get ship location
             SqlCommand cmd = new SqlCommand("select Course, ShipTypes.Name from Ships Inner Join ShipTypes on ships.ShipTypeID = ShipTypes.ShipTypeID  WHERE ShipID = " + ((ListBoxItem)lstLaivat.SelectedItem).Tag, cnn);
             Reader = cmd.ExecuteReader();
             Reader.Read();
             lblKompassiAste.Content = Reader["Course"];
             lblLaivanTyyppi.Content = Reader["Name"];
-
+            // TODO: Update location to map
 
             cnn.Close();
         }

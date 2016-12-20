@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
         xmlns:local="clr-namespace:Shipsoftware"
         mc:Ignorable="d"
         Title="MainWindow" Height="525.477" Width="1005.499" Icon="favicon.ico" Loaded="Window_Loaded">
@@ -33,11 +34,13 @@
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="210" Margin="0,278,0,0" VerticalAlignment="Top" Width="478">
             <Label x:Name="label" Margin="-1,1,1,-1"/>
         </Border>
+        <Grid Margin="478,0,0,47">
+            <m:Map x:Name="kartta" CredentialsProvider="AlhgZbBop7bpya9zoiH8hij_x2qCzADMxX0AMDtV5i3KN9PmsEi5r7AfL3hXKFFB" Center="63.4,21.0" ZoomLevel="8"/>
+        </Grid>
         <Label x:Name="lblLaivanTyyppi" Content="Placeholder" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="56,171,0,0" Height="25" Width="140"/>
         <Label x:Name="LaivaID" Content="Laiva ID:" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Height="28" Width="55"/>
         <Label x:Name="North" Content="N:" HorizontalAlignment="Left" Height="28" Margin="491,26,0,0" VerticalAlignment="Top" Width="32"/>
         <Label x:Name="GPS" Content="GPS" HorizontalAlignment="Left" Margin="478,0,0,509" VerticalAlignment="Bottom" FontWeight="Bold"/>
         <Label x:Name="East" Content="E:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="492,44,0,0"/>
-
     </Grid>
 </Window>
