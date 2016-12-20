@@ -40,8 +40,7 @@ namespace Shipsoftware
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            // TODO: @jori Get Ship location
-            SqlCommand cmd = new SqlCommand("select ShipName, ShipID from Ships", cnn);
+            SqlCommand cmd = new SqlCommand("select ShipName, Ships.ShipID, North, East from Ships inner join GPS on ships.ShipID = GPS.ShipID ", cnn);
             try
             {
                 Reader = cmd.ExecuteReader();
