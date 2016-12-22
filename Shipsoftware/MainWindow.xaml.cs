@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using Microsoft.Maps.MapControl.WPF;
+using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -22,6 +23,7 @@ namespace Shipsoftware
             {
                 string[] lines = System.IO.File.ReadAllLines(@"yhdistys.txt");
                 connetionString = "Data Source=" + lines[0] + ";  Initial Catalog=" + lines[1] + ";User ID=" + lines[2] + ";Password=" + lines[3]; // yhteyden tiedot
+                kartta.CredentialsProvider = new ApplicationIdCredentialsProvider(lines[4]);
                 cnn = new SqlConnection(connetionString);
                 try   // yhteyden avaus yritys
                 {

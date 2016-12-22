@@ -35,7 +35,7 @@
             <Label x:Name="label" Margin="-1,1,1,-1"/>
         </Border>
         <Grid Margin="478,0,0,47">
-            <m:Map x:Name="kartta" CredentialsProvider="AlhgZbBop7bpya9zoiH8hij_x2qCzADMxX0AMDtV5i3KN9PmsEi5r7AfL3hXKFFB" Center="63.4,21.0" ZoomLevel="8"/>
+            <m:Map x:Name="kartta" Center="63.4,21.0" ZoomLevel="8"/>
         </Grid>
         <Label x:Name="lblLaivanTyyppi" Content="Placeholder" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="56,171,0,0" Height="25" Width="140"/>
         <Label x:Name="LaivaID" Content="Laiva ID:" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top" Height="28" Width="55"/>
