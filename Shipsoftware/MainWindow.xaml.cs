@@ -52,18 +52,31 @@ namespace Shipsoftware
                 MessageBox.Show("ei toimi");
                 return;
             }
+
             while (Reader.Read())
             {
-                //  lstLaivat.Items.Add(Reader["ShipName"]);
+                string shipName = Reader["ShipName"].ToString();
+                string shipID = Reader["ShipID"].ToString();
+                double north = System.Convert.ToDouble(Reader["North"]);
+                double east = System.Convert.ToDouble(Reader["East"]);
+
+                // Listalaatikko itemin luonti
                 ListBoxItem Item = new ListBoxItem();
-                Item.Content = Reader["ShipName"];
-                Item.Tag = Reader["ShipID"];
+                Item.Content = shipName;
+                Item.Tag = shipID;
                 lstLaivat.Items.Add(Item);
                 Item.MouseLeftButtonUp += ListBoxItem_MouseLeftButtonUp;
-				// TODO: Add pushpins to map
+
+                // Pushpin:n lisääminen karttaan
+                Pushpin pushpin = new Pushpin();
+                pushpin.Location = new Location(north, east);
+                pushpin.ToolTip = shipName;
+                kartta.Children.Add(pushpin);
             }
+
             cnn.Close();
         }
+
         private void ListBoxItem_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             cnn.Open();
